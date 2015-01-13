@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Diazwatson_NewsletterSubscriptionDateFix
+ *
+ * @category    NewsletterSubscriptionDateFix
+ * @package     Diazwatson_NewsletterSubscriptionDateFix
+ * @Date        01/2015
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
+<config>
+    <modules>
+        <Diazwatson_NewsletterSubscriptionDateFix>
+            <version>0.1.0</version>
+        </Diazwatson_NewsletterSubscriptionDateFix>
+    </modules>
+    <global>
+        <models>
+            <newslettersubscriptiondatefix>
+                <class>Diazwatson_NewsletterSubscriptionDateFix_Model</class>
+            </newslettersubscriptiondatefix>
+        </models>
+        <events>
+            <newsletter_subscriber_save_before>
+                <observers>
+                    <newslettersubscriptiondatefix>
+                        <type>singleton</type>
+                        <class>newslettersubscriptiondatefix/observer</class>
+                        <method>setUpdateDate</method>
+                    </newslettersubscriptiondatefix>
+                </observers>
+            </newsletter_subscriber_save_before>
+        </events>
+    </global>
+</config>

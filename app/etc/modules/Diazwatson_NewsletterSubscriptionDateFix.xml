@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Diazwatson_NewsletterSubscriptionDateFix
+ *
+ * @category    NewsletterSubscriptionDateFix
+ * @package     Diazwatson_NewsletterSubscriptionDateFix
+ * @Date        01/2015
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
+<config>
+    <modules>
+        <Diazwatson_NewsletterSubscriptionDateFix>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Diazwatson_NewsletterSubscriptionDateFix>
+    </modules>
+</config>
